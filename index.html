@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Builder pattern</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="city">
+        <div class="new-car">
+            <div class="control">
+                <input type="text" id="carName" name="carName" placeholder="Enter car name">
+                <label class="car-name" for="carName">Car Name</label>
+            </div>
+            <button type="button">
+                new car
+            </button>
+        </div>
+        <div class="builder" id="builder">
+            <div class="control" id="body">
+                <input type="color" id="bodyColor" name="bodyColor"
+                       value="#ffffff">
+                <label class="car-label" for="bodyColor">Body Color</label>
+            </div>
+            <div class="control">
+                <button type="button" id="wheels-btn">Add wheels</button>
+            </div>
+            <div class="control">
+                <button type="button" id="lights-btn">Add lights</button>
+            </div>
+            <div class="control">
+                <button type="button" id="nitro-btn">Add nitro</button>
+            </div>
+            <div class="control">
+                <button class="builder-btn">
+                    Build car
+                </button>
+            </div>
+        </div>
+        <div class="sky"></div>
+        <div class="highway"></div>
+        <div class="car" id="car">
+            <div class="car-doors">
+                <div class="car-door"></div>
+                <div class="car-door"></div>
+            </div>
+            <div class="car-text"></div>
+            <div class="car-wheels" id="wheels">
+                <div class="car-wheel">
+                    <div class="car-wheel-inner"></div>
+                </div>
+                <div class="car-wheel">
+                    <div class="car-wheel-inner"></div>
+                </div>
+            </div>
+            <div class="car-nitro" id="nitro"></div>
+            <div class="car-lights" id="lights"></div>
+        </div>
+    </div>
+    <script src="builder.js"></script>
+</body>
+</html>

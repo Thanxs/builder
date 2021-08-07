@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.new-car {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: .3s all;
+}
+
+.new-car button:hover {
+    background-color: #00c485;
+}
+
+.new-car input {
+    padding: 10px;
+}
+
+.new-car button {
+    margin-top: 5px;
+    padding: 15px;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 5px;
+    background-color: #003da2;
+    color: #ffffff;
+    transition: .3s all;
+}
+
+.car-name {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.builder {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 5px double #000000;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.control button {
+    min-width: 200px;
+    padding: 18px;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 5px;
+    background-color: #003da2;
+    color: #ffffff;
+    transition: .3s all;
+}
+
+.control button:hover {
+    background-color: #0e6aff;
+}
+
+.car-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.49);
+}
+
+.builder-btn {
+    padding: 15px;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.city {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sky {
+    height: 60%;
+    background-color: lightskyblue;
+}
+
+.highway {
+    height: 40%;
+    background-color: dimgray;
+}
+
+.car {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 550px;
+    height: 200px;
+    background-color: #ffffff;
+    border: 5px double #000000;
+    border-radius: 50px 150px 0 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.car-doors {
+    display: flex;
+}
+
+.car-door {
+    width: 265px;
+    height: 150px;
+    border-radius: 5px;
+    border: 5px double #000000;
+    margin: 3px;
+}
+
+#car, #wheels, #lights, #nitro, #builder {
+    display: none;
+}
+
+.car-door:first-child {
+    border-radius: 50px 0 0 0;
+}
+
+.car-door:last-child {
+    border-radius: 0 150px 0 0;
+}
+
+.car-text {
+    font-size: 24px;
+    font-weight: 600;
+    height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.car-wheels {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car-wheel {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.car-wheel-inner {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #dddddd;
+}
+
+.car-nitro {
+    position: absolute;
+    top: 80%;
+    left: -110px;
+    width: 100px;
+    height: 20px;
+    background: linear-gradient(blue, blueviolet, lightskyblue);
+    border-right: none;
+    border-radius: 20px 0 0 20px;
+    box-shadow: 10px 0 10px 0 rgba(0, 102, 255, 0.6);
+}
+
+.car-lights {
+    position: absolute;
+    top: 70%;
+    left: 100%;
+    width: 20px;
+    height: 50px;
+    background-color: yellow;
+    border: 3px solid #000000;
+    box-shadow: 20px 0 20px 20px rgba(255, 255, 0, 0.6);
+    border-radius: 0 20px 20px 0;
+}
